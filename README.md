@@ -1,27 +1,48 @@
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=800&lines=Hi+there+%F0%9F%91%8B%2C+I'm+Mohan+K;Full+Stack+Developer+%F0%9F%92%BB;Web+Developer+%F0%9F%8C%90;UI%2FUX+Enthusiast+%F0%9F%8E%A8;Welcome+to+my+GitHub+Profile!" alt="Typing SVG" />
-</h1>
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Hi%20there%2C%20I'm%20Mohan%20👋&fontSize=48&fontAlignY=35&animation=fadeIn&desc=Welcome%20to%20my%20GitHub%20Profile&descAlignY=55&descAlign=50" width="100%" />
+
+<a href="https://mohan-k-nov8.vercel.app/">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Web+Developer;Frontend+Enthusiast;Building+cool+things+for+the+web;Check+out+my+portfolio!" alt="Typing SVG" />
+</a>
+
+</div>
+
+---
+
+## 👨‍💻 About Me
+
+Hi, I'm Mohan — a web developer who enjoys creating useful and engaging experiences for the web. Visit my [portfolio](https://mohan-k-nov8.vercel.app/) to learn more about me and explore my work.
+
+- 💻 I build web applications and front-end experiences
+- 🛠️ I work with **HTML, CSS, JavaScript, and React**
+- 🌱 I'm always learning and improving my skills
+- ⚡ I enjoy turning ideas into working websites
+
+## 🌐 My Website
+
+[![Portfolio](https://img.shields.io/badge/Visit_My_Website-Click_Here-0A66C2?style=for-the-badge&logo=vercel&logoColor=white)](https://mohan-k-nov8.vercel.app/)
+
+---
+
+## 🛠️ Tech Stack
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,git,github,vercel" />
+</p>
+
+---
+
+## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://komarev.com/gh-pvc/?username=MohanK-2026&color=00f7ff&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight" />
 </p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+  <img src="https://streak-stats.demolab.com?user=YOUR_USERNAME&theme=tokyonight&hide_border=true" />
 </p>
-
-## 🌐 About Me
-
-<img align="right" alt="Coding" width="380" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
-
-- 🔭 I'm currently working on **Web Development Projects**
-- 🌱 I'm currently learning **Advanced Full Stack Technologies**
-- 👨‍💻 All of my projects are available at [**mohan-k-nov8.vercel.app**](https://mohan-k-nov8.vercel.app/)
-- 💬 Ask me about **React, Next.js, JavaScript, Python**
-- 📫 How to reach me: **mohantn617@gmail.com**
-- ⚡ Fun fact: **I turn coffee into code ☕➡️💻**
-
-<br clear="both">
 
 ---
 
@@ -41,39 +62,12 @@
 
 ---
 
-## 💡 Featured LeetCode Solutions
+## 📫 Connect With Me
 
-<p align="center">
-  <img src="https://img.shields.io/badge/C-%2300599C.svg?style=flat-square&logo=c&logoColor=white" />
-  <img src="https://img.shields.io/badge/C++-%2300599C.svg?style=flat-square&logo=c%2B%2B&logoColor=white" />
-  <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=flat-square&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-</p>
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/YOUR_USERNAME)
+[![Portfolio](https://img.shields.io/badge/Portfolio-0A66C2?style=for-the-badge&logo=vercel&logoColor=white)](https://mohan-k-nov8.vercel.app/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/MohanK_2026/)
 
-<!-- ================= PROBLEM 1 ================= -->
-<details>
-<summary><b>🟢 0001. Two Sum (Easy)</b></summary>
+---
 
-<br>
-
-<details>
-<summary><b>🔵 C Solution</b></summary>
-
-```c
-#include <stdlib.h>
-
-int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
-    *returnSize = 2;
-    int* result = (int*)malloc(2 * sizeof(int));
-    for (int i = 0; i < numsSize; i++) {
-        for (int j = i + 1; j < numsSize; j++) {
-            if (nums[i] + nums[j] == target) {
-                result[0] = i;
-                result[1] = j;
-                return result;
-            }
-        }
-    }
-    *returnSize = 0;
-    return NULL;
-}
+<p align="center">⭐ Thanks for visiting my profile! ⭐</p>
