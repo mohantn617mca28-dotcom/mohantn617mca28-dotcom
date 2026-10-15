@@ -10,7 +10,7 @@ from datetime import datetime, timezone, timedelta
 import requests
 
 # ================= CONFIG =================
-USERNAME = "MohanK_2026"   # your LeetCode username
+USERNAME = "MohanK_2026"   # LeetCode username
 BAR_WIDTH = 25             # progress bar length
 README_FILE = "README.md"
 # ==========================================
@@ -58,7 +58,6 @@ def build_block(langs):
     if total == 0:
         return "```text\nNo solved problems yet.\n```"
 
-    # IST timestamp for "last updated"
     ist = timezone(timedelta(hours=5, minutes=30))
     updated = datetime.now(ist).strftime("%d %b %Y, %I:%M %p IST")
 
@@ -86,9 +85,6 @@ def update_readme(block):
 
     if not re.search(pattern, content):
         print("❌ Markers not found in README.md!")
-        print("Add these lines where you want the stats:")
-        print("<!--START_SECTION:leetcode-langs-->")
-        print("<!--END_SECTION:leetcode-langs-->")
         sys.exit(1)
 
     new_content = re.sub(
