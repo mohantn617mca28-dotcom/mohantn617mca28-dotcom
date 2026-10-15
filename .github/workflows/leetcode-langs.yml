@@ -1,0 +1,41 @@
+name: LeetCode Language Stats
+
+on:
+  schedule:
+    - cron: "0 * * * *"    # runs every hour (near real-time)
+  workflow_dispatch:         # allows manual run from Actions tab
+  push:
+    branches: [main]         # also runs when you push (first-time test)
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run stats script
+        run: python scripts/leetcode_langs.py
+
+      - name: Commit & push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "⚡ Update LeetCode language stats"
+            git push
+          fi
