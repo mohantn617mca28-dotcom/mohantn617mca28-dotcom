@@ -2,10 +2,10 @@ name: LeetCode Language Stats
 
 on:
   schedule:
-    - cron: "0 * * * *"    # runs every hour (near real-time)
-  workflow_dispatch:         # allows manual run from Actions tab
+    - cron: "0 * * * *"    # every hour
+  workflow_dispatch:         # manual run button
   push:
-    branches: [main]         # also runs when you push (first-time test)
+    branches: [main]         # run on push (first-time test)
 
 jobs:
   update-stats:
