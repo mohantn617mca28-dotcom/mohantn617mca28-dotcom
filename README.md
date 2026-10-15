@@ -54,6 +54,11 @@ Hi, I'm Mohan — a web developer who enjoys creating useful and engaging experi
   </a>
 </p>
 
+## 📈 LeetCode Language Usage (Auto-Updated ⏱️)
+
+<!--START_SECTION:leetcode-langs-->
+<!--END_SECTION:leetcode-langs-->
+
 <p align="center">
   <a href="https://leetcode.com/u/MohanK_2026/">
     <img src="https://img.shields.io/badge/LeetCode-Profile_View-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode Profile" />
