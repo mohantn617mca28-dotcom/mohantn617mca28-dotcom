@@ -57,6 +57,15 @@ Hi, I'm Mohan — a web developer who enjoys creating useful and engaging experi
 ## 📈 LeetCode Language Usage (Auto-Updated ⏱️)
 
 <!--START_SECTION:leetcode-langs-->
+```text
+C            █████████████░░░░░░░░░░░░  53.3%  (16 solved)
+Python       ███████░░░░░░░░░░░░░░░░░░  26.7%  (8 solved)
+JavaScript   ████░░░░░░░░░░░░░░░░░░░░░  16.7%  (5 solved)
+MySQL        █░░░░░░░░░░░░░░░░░░░░░░░░   3.3%  (1 solved)
+
+Total Solved : 30
+Last Updated : 15 Oct 2026, 04:06 PM IST
+```
 <!--END_SECTION:leetcode-langs-->
 
 <p align="center">
