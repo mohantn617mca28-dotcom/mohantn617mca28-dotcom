@@ -70,25 +70,23 @@
 
 <div align="center">
 
-  <a href="https://leetcode.com/u/Mohan_K_2026/" target="_blank">
-    <img src="https://leetcard.jacoblin.cool/Mohan_K_2026?theme=dark&font=Fira%20Code&ext=heatmap" alt="Mohan's LeetCode Stats Card" />
+  <a href="https://leetcode.com/u/MohanK_2026/" target="_blank">
+    <img src="https://leetcard.jacoblin.cool/MohanK_2026?theme=dark&font=Fira%20Code&ext=heatmap" alt="Mohan's LeetCode Stats Card" />
   </a>
 
   <br/><br/>
 
-  <a href="https://leetcode.com/u/Mohan_K_2026/" target="_blank">
-    <img src="https://img.shields.io/badge/LeetCode-Profile_Mohan__K__2026-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode Profile" />
+  <a href="https://leetcode.com/u/MohanK_2026/" target="_blank">
+    <img src="https://img.shields.io/badge/LeetCode-Profile_MohanK__2026-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode Profile" />
   </a>
-  <a href="https://leetcode.com/u/Mohan_K_2026/" target="_blank">
+  <a href="https://leetcode.com/u/MohanK_2026/" target="_blank">
     <img src="https://img.shields.io/badge/DSA-Active_Solver-00FF88?style=for-the-badge&logo=hackerrank&logoColor=black" alt="Active Solver" />
   </a>
-  <a href="https://leetcode.com/u/Mohan_K_2026/" target="_blank">
+  <a href="https://leetcode.com/u/MohanK_2026/" target="_blank">
     <img src="https://img.shields.io/badge/Focus-Arrays_%E2%80%A2_Strings_%E2%80%A2_DP_%E2%80%A2_Trees-1E88E5?style=for-the-badge&logo=codeforces&logoColor=white" alt="DSA Focus" />
   </a>
 
 </div>
-
----
 
 ### 🛠️ Tech Stack & Skills
 
