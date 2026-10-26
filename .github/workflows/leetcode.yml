@@ -1,0 +1,57 @@
+name: Update LeetCode Stats
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # runs every 6 hours
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch LeetCode stats
+        env:
+          LC_USER: YOUR_LEETCODE_USERNAME
+        run: |
+          python3 - <<'PY'
+          import json, os, re, urllib.request
+
+          user = os.environ["LC_USER"]
+          query = """query($username: String!) {
+            matchedUser(username: $username) {
+              profile { ranking }
+              submitStatsGlobal { acSubmissionNum { difficulty count } }
+            }
+          }"""
+          req = urllib.request.Request(
+              "https://leetcode.com/graphql/",
+              data=json.dumps({"query": query, "variables": {"username": user}}).encode(),
+              headers={"Content-Type": "application/json", "Referer": "https://leetcode.com"})
+          d = json.load(urllib.request.urlopen(req))["data"]["matchedUser"]
+          s = {x["difficulty"]: x["count"] for x in d["submitStatsGlobal"]["acSubmissionNum"]}
+          md = (f"<!-- LEETCODE:START -->\n"
+                f"## 🔥 LeetCode (updated automatically)\n\n"
+                f"![Total](https://img.shields.io/badge/Total%20Solved-{s.get('All',0)}-FFA116?style=for-the-badge&logo=leetcode) "
+                f"![Easy](https://img.shields.io/badge/Easy-{s.get('Easy',0)}-2EA44F) "
+                f"![Medium](https://img.shields.io/badge/Medium-{s.get('Medium',0)}-FFA116) "
+                f"![Hard](https://img.shields.io/badge/Hard-{s.get('Hard',0)}-D93F0B) "
+                f"![Rank](https://img.shields.io/badge/Global%20Rank-{d['profile']['ranking']}-blue)\n\n"
+                f"[👉 My LeetCode Profile](https://leetcode.com/u/{user}/)\n"
+                f"<!-- LEETCODE:END -->")
+          r = open("README.md").read()
+          r = re.sub(r"<!-- LEETCODE:START -->.*?<!-- LEETCODE:END -->", md.strip(), r, flags=re.S)
+          open("README.md", "w").write(r)
+          PY
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "chore: update LeetCode stats"
+          git push
